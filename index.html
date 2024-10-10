@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS Grids</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /*column-gap: 1em;*/
+            /*row-gap: 1em;*/
+            
+            gap: 1em;
+        }
+        
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi delectus iure iusto magni,
+            natus numquam rem. Deserunt doloremque est excepturi expedita explicabo illo iure minus mollitia nemo neque
+            nisi, nobis reiciendis saepe voluptatem voluptatibus. Exercitationem praesentium, saepe! Adipisci aliquam
+            enim facere harum laborum porro quaerat quam quia quibusdam. Alias aliquid assumenda deserunt esse est
+            expedita harum id illo impedit incidunt maiores minus natus nesciunt nobis nulla quae quaerat ratione
+            reiciendis rerum similique tenetur ut, velit vitae? Culpa, dignissimos dolores.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at consectetur cumque
+            doloribus dolorum eius error, harum incidunt ipsa mollitia nihil quis quos sed sit temporibus vitae
+            voluptate.
+        </div>
+        
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi delectus iure iusto magni,
+            natus numquam rem. Deserunt doloremque est excepturi expedita explicabo illo iure minus mollitia nemo neque
+            nisi, nobis reiciendis saepe voluptatem voluptatibus. Exercitationem praesentium, saepe! Adipisci aliquam
+            enim facere harum laborum porro quaerat quam quia quibusdam. Alias aliquid assumenda deserunt esse est
+            expedita harum id illo impedit incidunt maiores minus natus nesciunt nobis nulla quae quaerat ratione
+            reiciendis rerum similique tenetur ut, velit vitae? Culpa, dignissimos dolores.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at consectetur cumque
+            doloribus dolorum eius error, harum incidunt ipsa mollitia nihil quis quos sed sit temporibus vitae
+            voluptate.
+        </div>
+    </div>
 </body>
 </html>
